@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>TNSTC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+	 <!-- The Modal -->
+	 <div class="modal" id="myModal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+	  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h3 class="modal-title">QR Code for TNSTC's facebook</h3>
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+	  
+			<!-- Modal body -->
+			<div class="modal-body">
+				<img src="assets/qr/facbook_qr.png" height="100" width="100">
+			</div>
+			<style>
+				.modal-body {
+					text-align: center;
+				}
+			</style>
+	  
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- The Modal -->
+	 <div class="modal" id="myModal2">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+	  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h3 class="modal-title">QR Code for TNSTC's website</h3>
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+	  
+			<!-- Modal body -->
+			<div class="modal-body">
+				<img src="assets/qr/website_qr.png" height="100" width="100">
+			</div>
+			<style>
+				.modal-body {
+					text-align: center;
+				}
+			</style>
+	  
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Space Research</h1>
+						<p>Tamil Nadu Science and Technology Center</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Space Research</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About TNSTC</a></li>
+							<li><a href="feedback.html">Feedback</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-facebook-f" data-toggle="modal" data-target="#myModal"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa fa-envelope" data-toggle="modal" data-target="#myModal2"><span class="label">icon</span></a></li>
+						</ul>
+					</nav>
+
+					
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="page1/topic1.html" id="topic-name1"></a></h2>
+									</header>
+									<a href="page1/topic1.html" class="image fit"><img src="./data/page1/topic1/img1.jpg" alt="" width="100" height="300" /></a>
+									<p id="para1" style="height: 18ch; overflow: hidden; text-overflow: ellipsis;"></p>
+									<ul class="actions special">
+										<li><a href="page1/topic1.html" class="button">Full Story</a></li>
+									</ul>
+
+									<script>
+										text1 = document.getElementById('topic-name1');
+	
+										xhr1 = new XMLHttpRequest();
+										xhr1.open("GET", "http://localhost:1337/data/page1/topic1/title.txt");
+										xhr1.send();
+	
+										xhr1.onreadystatechange = function() {
+											if (xhr1.readyState == 4)
+												text1.innerHTML = xhr1.responseText;
+										}
+									</script>
+									<script>
+										text2 = document.getElementById('para1');
+	
+										xhr2 = new XMLHttpRequest();
+										xhr2.open("GET", "http://localhost:1337/data/page1/topic1/para1.txt");
+										xhr2.send();
+	
+										xhr2.onreadystatechange = function() {
+											if (xhr2.readyState == 4)
+												text2.innerHTML = xhr2.responseText;
+										}
+									</script>
+
+								</article>
+
+								<article>
+									<header>
+										<h2><a href="page1/topic2.html" id="topic-name2"></a></h2>
+									</header>
+									<a href="page1/topic2.html" class="image fit"><img src="./data/page1/topic2/img1.jpg" alt="" width="100" height="300" /></a>
+									<p id="para2" style="height: 18ch; overflow: hidden; text-overflow: ellipsis;"></p>
+									<ul class="actions special">
+										<li><a href="page1/topic2.html" class="button">Full Story</a></li>
+									</ul>
+
+									<script>
+										text5 = document.getElementById('topic-name2');
+	
+										xhr5 = new XMLHttpRequest();
+										xhr5.open("GET", "http://localhost:1337/data/page1/topic2/title.txt");
+										xhr5.send();
+	
+										xhr5.onreadystatechange = function() {
+											if (xhr5.readyState == 4)
+												text5.innerHTML = xhr5.responseText;
+										}
+									</script>
+									<script>
+										text3 = document.getElementById('para2');
+	
+										xhr3 = new XMLHttpRequest();
+										xhr3.open("GET", "http://localhost:1337/data/page1/topic2/para1.txt");
+										xhr3.send();
+	
+										xhr3.onreadystatechange = function() {
+											if (xhr3.readyState == 4)
+												text3.innerHTML = xhr3.responseText;
+										}
+									</script>
+
+								</article>
+
+								<article>
+									<header>
+										<h2><a href="page1/topic3.html" id="topic-name3"></a></h2>
+									</header>
+									<a href="page1/topic3.html" class="image fit"><img src="./data/page1/topic3/img1.jpg" alt="" width="100" height="300" /></a>
+									<p id="para3" style="height: 18ch; overflow: hidden; text-overflow: ellipsis;"></p>
+									<ul class="actions special">
+										<li><a href="page1/topic3.html" class="button">Full Story</a></li>
+									</ul>
+
+									<script>
+										text4 = document.getElementById('topic-name3');
+	
+										xhr4 = new XMLHttpRequest();
+										xhr4.open("GET", "http://localhost:1337/data/page1/topic3/title.txt");
+										xhr4.send();
+	
+										xhr4.onreadystatechange = function() {
+											if (xhr4.readyState == 4)
+												text4.innerHTML = xhr4.responseText;
+										}
+									</script>
+									<script>
+										text6 = document.getElementById('para3');
+	
+										xhr6 = new XMLHttpRequest();
+										xhr6.open("GET", "http://localhost:1337/data/page1/topic3/para1.txt");
+										xhr6.send();
+	
+										xhr6.onreadystatechange = function() {
+											if (xhr6.readyState == 4)
+												text6.innerHTML = xhr6.responseText;
+										}
+									</script>
+
+								</article>
+								
+								<article>
+									<header>
+										<h2><a href="page1/topic4.html" id="topic-name4"></a></h2>
+									</header>
+									<a href="page1/topic4.html" class="image fit"><img src="./data/page1/topic4/img1.jpg" alt="" width="100" height="300" /></a>
+									<p id="para4" style="height: 18ch; overflow: hidden; text-overflow: ellipsis;"></p>
+									<ul class="actions special">
+										<li><a href="page1/topic4.html" class="button">Full Story</a></li>
+									</ul>
+
+									<script>
+										text7 = document.getElementById('topic-name4');
+	
+										xhr7 = new XMLHttpRequest();
+										xhr7.open("GET", "http://localhost:1337/data/page1/topic4/title.txt");
+										xhr7.send();
+	
+										xhr7.onreadystatechange = function() {
+											if (xhr7.readyState == 4)
+												text7.innerHTML = xhr7.responseText;
+										}
+									</script>
+									<script>
+										text8 = document.getElementById('para4');
+	
+										xhr8 = new XMLHttpRequest();
+										xhr8.open("GET", "http://localhost:1337/data/page1/topic4/para1.txt");
+										xhr8.send();
+	
+										xhr8.onreadystatechange = function() {
+											if (xhr8.readyState == 4)
+												text8.innerHTML = xhr8.responseText;
+										}
+									</script>
+
+								</article>
+							
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<a href="#" class="page active">1</a>
+									<a href="index2.html" class="page">2</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Tamil Nadu Science and Technology Center, 1983</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
