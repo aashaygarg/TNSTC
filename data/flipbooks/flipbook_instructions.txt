@@ -1,0 +1,27 @@
+Following are the steps required to add a new flipbook to the pool-
+
+
+STEP 1: 
+	Take the pdf you want to convert and go to www.pdf2jpeg.net and convert the pdf to a series of JPEG images.
+
+STEP 2:
+	After downloading the converted images make sure to rename the images as "1.jpeg","2.jpeg","3.jpeg" and so on till the last page.
+
+STEP 3:
+	Now open the folder Flipbook and head over to data folder. Transfer the downloaded folder with the pdf images here.
+
+STEP 4:
+	Now go back to the original Flipbook(not flip) folder. There you will find a folder named PDF, transfer the pdf to the folder named PDF.
+
+STEP 5:
+	We are now all set but some few modifications needed. 
+
+	Go to the folder where you have all the HTML pages. Make a new HTML page for the new flipbook(e.g., sample_3.html).
+
+STEP 6:
+	Copy and paste the code of any of the previous html pages to the newly created html page.
+
+STEP 7:
+	Change all the required lines in the code as in the comments. The comments are in the form <!--comment--> for HTML and //comment for CSS.
+	 
+	REMEMBER THE NAME OF THE DEMO SAMPLE BOOK REFERRED TO IN THE ENTIRE INSTRUCTION IS SAMPLE_3. IF YOU WANT TO HAVE CUSTOMIZED NAMES, REPLACE ALL SAMPLE_3 WITH THE CUSTOMIZED NAME.  
