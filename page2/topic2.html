@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>TNSTC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+</head>
+
+	 <!-- The Modal -->
+	 <div class="modal" id="myModal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+	  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h3 class="modal-title">QR Code for TNSTC's facebook</h3>
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+	  
+			<!-- Modal body -->
+			<div class="modal-body">
+				<img src="../assets/qr/facbook_qr.png" height="100" width="100">
+			</div>
+			<style>
+				.modal-body {
+					text-align: center;
+				}
+			</style>
+	  
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- The Modal -->
+	 <div class="modal" id="myModal2">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+	  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h3 class="modal-title">QR Code for TNSTC's website</h3>
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+	  
+			<!-- Modal body -->
+			<div class="modal-body">
+				<img src="../assets/qr/website_qr.png" height="100" width="100">
+			</div>
+			<style>
+				.modal-body {
+					text-align: center;
+				}
+			</style>
+	  
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo">Space Research</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../about.html">About TNSTC</a></li>
+							<li><a href="../feedback.html">Feedback</a></li>
+							<li class="active"><a href="topic2.html" id="topic-name"></a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-facebook-f" data-toggle="modal" data-target="#myModal"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa fa-envelope" data-toggle="modal" data-target="#myModal2"><span class="label">icon</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date" id="date"></span>
+									<h1 id="title"></h1>
+									<p id="quote"></p>
+								</header>
+
+								<p>	<h2 id="h1"></h2>
+									<span class="image left"><img src="http://localhost:1337/data/page2/topic2/img1.jpg" alt="" /></span>
+									<p id="para1"></p>
+									<p id="para2"></p>
+									<p id="para3"></p>
+									<h2 id="h2"></h2>
+									<span class="image left"><img src="http://localhost:1337/data/page2/topic2/img2.jpg" alt="" /></span>
+									<p id="para4"></p>
+									<p id="para5"></p>
+									<p id="para6"></p>
+									<h2 id="h3"></h2>
+									<span class="image left"><img src="http://localhost:1337/data/page2/topic2/img3.jpg" alt="" /></span>
+									<p id="para7"></p>
+									<p id="para8"></p>
+									<p id="para9"></p>
+									<p id="para10"></p>
+									<video width=100% height="auto" controls>
+										<source src="http://localhost:1337/data/page2/topic2/video.mp4" type="video/mp4">
+									</video>
+
+									<h3>Citation</h3>
+									<div class="box">
+										<p><i id="citation"></i></p>
+									</div>
+
+									
+								</p>
+									<ul class="actions fit">
+										<li><a href="http://localhost:1337/data/flipbooks/page2topic2.html" class="button primary fit">Convert to Flipbook</a></li>
+										<li><a href="quiz2/index.html" class="button fit">Take a Quiz</a></li>
+									</ul>
+								</section>
+
+								<script>
+									text1 = document.getElementById('date');
+
+									xhr1 = new XMLHttpRequest();
+									xhr1.open("GET", "http://localhost:1337/data/page2/topic2/date.txt");
+									xhr1.send();
+
+									xhr1.onreadystatechange = function() {
+									    if (xhr1.readyState == 4)
+									        text1.innerHTML = xhr1.responseText;
+									}
+								</script>
+
+								<script>
+									text2 = document.getElementById('topic-name');
+
+									xhr2 = new XMLHttpRequest();
+									xhr2.open("GET", "http://localhost:1337/data/page2/topic2/title.txt");
+									xhr2.send();
+
+									xhr2.onreadystatechange = function() {
+									    if (xhr2.readyState == 4)
+									        text2.innerHTML = xhr2.responseText;
+									}
+								</script>
+
+								
+								<script>
+									text3 = document.getElementById('quote');
+
+									xhr3 = new XMLHttpRequest();
+									xhr3.open("GET", "http://localhost:1337/data/page2/topic2/quote.txt");
+									xhr3.send();
+
+									xhr3.onreadystatechange = function() {
+									    if (xhr3.readyState == 4)
+									        text3.innerHTML = xhr3.responseText;
+									}
+								</script>
+
+								<script>
+									text4 = document.getElementById('title');
+
+									xhr4 = new XMLHttpRequest();
+									xhr4.open("GET", "http://localhost:1337/data/page2/topic2/title.txt");
+									xhr4.send();
+
+									xhr4.onreadystatechange = function() {
+									    if (xhr4.readyState == 4)
+									        text4.innerHTML = xhr4.responseText;
+									}
+								</script>
+
+								<script>
+									text5 = document.getElementById('para1');
+
+									xhr5 = new XMLHttpRequest();
+									xhr5.open("GET", "http://localhost:1337/data/page2/topic2/para1.txt");
+									xhr5.send();
+
+									xhr5.onreadystatechange = function() {
+									    if (xhr5.readyState == 4)
+									        text5.innerHTML = xhr5.responseText;
+									}
+								</script>
+								<script>
+									text6 = document.getElementById('para2');
+
+									xhr6 = new XMLHttpRequest();
+									xhr6.open("GET", "http://localhost:1337/data/page2/topic2/para2.txt");
+									xhr6.send();
+
+									xhr6.onreadystatechange = function() {
+									    if (xhr6.readyState == 4)
+									        text6.innerHTML = xhr6.responseText;
+									}
+								</script>
+								<script>
+									text7 = document.getElementById('para3');
+
+									xhr7 = new XMLHttpRequest();
+									xhr7.open("GET", "http://localhost:1337/data/page2/topic2/para3.txt");
+									xhr7.send();
+
+									xhr7.onreadystatechange = function() {
+									    if (xhr7.readyState == 4)
+									        text7.innerHTML = xhr7.responseText;
+									}
+								</script>
+								<script>
+									text8 = document.getElementById('para4');
+
+									xhr8 = new XMLHttpRequest();
+									xhr8.open("GET", "http://localhost:1337/data/page2/topic2/para4.txt");
+									xhr8.send();
+
+									xhr8.onreadystatechange = function() {
+									    if (xhr8.readyState == 4)
+									        text8.innerHTML = xhr8.responseText;
+									}
+								</script>
+								<script>
+									text9 = document.getElementById('para5');
+
+									xhr9 = new XMLHttpRequest();
+									xhr9.open("GET", "http://localhost:1337/data/page2/topic2/para5.txt");
+									xhr9.send();
+
+									xhr9.onreadystatechange = function() {
+									    if (xhr9.readyState == 4)
+									        text9.innerHTML = xhr9.responseText;
+									}
+								</script>
+								<script>
+									text10 = document.getElementById('para6');
+
+									xhr10 = new XMLHttpRequest();
+									xhr10.open("GET", "http://localhost:1337/data/page2/topic2/para6.txt");
+									xhr10.send();
+
+									xhr10.onreadystatechange = function() {
+									    if (xhr10.readyState == 4)
+									        text10.innerHTML = xhr10.responseText;
+									}
+								</script>
+								<script>
+									text11 = document.getElementById('para7');
+
+									xhr11 = new XMLHttpRequest();
+									xhr11.open("GET", "http://localhost:1337/data/page2/topic2/para7.txt");
+									xhr11.send();
+
+									xhr11.onreadystatechange = function() {
+									    if (xhr11.readyState == 4)
+									        text11.innerHTML = xhr11.responseText;
+									}
+								</script>
+								<script>
+									text12 = document.getElementById('para8');
+
+									xhr12 = new XMLHttpRequest();
+									xhr12.open("GET", "http://localhost:1337/data/page2/topic2/para8.txt");
+									xhr12.send();
+
+									xhr12.onreadystatechange = function() {
+									    if (xhr12.readyState == 4)
+									        text12.innerHTML = xhr12.responseText;
+									}
+								</script>
+								<script>
+									text13 = document.getElementById('para9');
+
+									xhr13 = new XMLHttpRequest();
+									xhr13.open("GET", "http://localhost:1337/data/page2/topic2/para9.txt");
+									xhr13.send();
+
+									xhr13.onreadystatechange = function() {
+									    if (xhr13.readyState == 4)
+									        text13.innerHTML = xhr13.responseText;
+									}
+								</script>
+								<script>
+									text14 = document.getElementById('para10');
+
+									xhr14 = new XMLHttpRequest();
+									xhr14.open("GET", "http://localhost:1337/data/page2/topic2/para10.txt");
+									xhr14.send();
+
+									xhr14.onreadystatechange = function() {
+									    if (xhr14.readyState == 4)
+									        text14.innerHTML = xhr14.responseText;
+									}
+								</script>
+								<script>
+									text15 = document.getElementById('h1');
+
+									xhr15 = new XMLHttpRequest();
+									xhr15.open("GET", "http://localhost:1337/data/page2/topic2/h1.txt");
+									xhr15.send();
+
+									xhr15.onreadystatechange = function() {
+									    if (xhr15.readyState == 4)
+									        text15.innerHTML = xhr15.responseText;
+									}
+								</script>
+								<script>
+									text16 = document.getElementById('h2');
+
+									xhr16 = new XMLHttpRequest();
+									xhr16.open("GET", "http://localhost:1337/data/page2/topic2/h2.txt");
+									xhr16.send();
+
+									xhr16.onreadystatechange = function() {
+									    if (xhr16.readyState == 4)
+									        text16.innerHTML = xhr16.responseText;
+									}
+								</script>
+								<script>
+									text17 = document.getElementById('h3');
+
+									xhr17 = new XMLHttpRequest();
+									xhr17.open("GET", "http://localhost:1337/data/page2/topic2/h3.txt");
+									xhr17.send();
+
+									xhr17.onreadystatechange = function() {
+									    if (xhr17.readyState == 4)
+									        text17.innerHTML = xhr17.responseText;
+									}
+								</script>
+								<script>
+									text18 = document.getElementById('citation');
+
+									xhr18 = new XMLHttpRequest();
+									xhr18.open("GET", "http://localhost:1337/data/page2/topic2/citation.txt");
+									xhr18.send();
+
+									xhr18.onreadystatechange = function() {
+									    if (xhr18.readyState == 4)
+									        text18.innerHTML = xhr18.responseText;
+									}
+								</script>
+
+							
+					</div>
+	
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Tamil Nadu Science and Technology Center, 1983</li></ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script src="../assets/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

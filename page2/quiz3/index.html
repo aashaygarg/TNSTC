@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>QUIZ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel = "stylesheet" href = "quiz.css">
+</head>
+<body>
+
+
+<div class="toggleNav">
+  <div class="sidebar">
+  <button id= "Q1" onclick="Qviewer(1)">Q1</button>
+  <button id= "Q2" onclick="Qviewer(2)">Q2</button>
+  <button id= "Q3" onclick="Qviewer(3)">Q3</button>
+  <button id= "Q4" onclick="Qviewer(4)">Q4</button>
+  <button id= "Q5" onclick="Qviewer(5)">Q5</button>
+  <button id= "Q6" onclick="Qviewer(6)">Q6</button>
+  <button id= "Q7" onclick="Qviewer(7)">Q7</button>
+  <button id= "Q8" onclick="Qviewer(8)">Q8</button>
+  <button id= "Q9" onclick="Qviewer(9)">Q9</button>
+  <button id= "10" onclick="Qviewer(10)">Q10</button>
+
+</div>
+</div>
+
+
+
+  <!-- Modal content -->
+  <div id="modalContent">
+    <p id="Msg"></p>
+  </div>
+  
+<div class="main">
+
+<div class="heading">
+
+
+	<h1 id="title">The Indian Space Program Quiz</h1>
+	<h3>Lets test your knowledge</h3>
+
+  <h4 class="Qn"></h4>
+	<h2 id = "quest"></h2>
+    
+
+<button class="button" id="button1" onclick="msg('button1')"></button>
+<button class="button" id="button2" onclick="msg('button2')"></button>
+<button class="button" id="button3" onclick="msg('button3')"></button>
+<button class="button" id="button4" onclick="msg('button4')"></button>
+<br>
+<br>
+
+<button class="Next" onclick="nxt()"><span>Next</span></button>
+<button class="submit" onclick="sub()">Submit & View Report</button>
+<br>
+<br>
+
+<div class="progressBar">
+  <div class="progressMade"></div>
+</div>
+
+<div class="Sub">
+
+  <canvas id="confetti"></canvas>
+        
+<div id="submitMessage">
+  Thank you for giving the quiz!<br><br><br>
+  <header><span id="feedbackAnswer"></span></header><br><br>
+  Correct: <span id="correctAnswers">0</span><br>
+  Incorrect: <span id="incorrectAnswers">0</span><br>
+  Unanswered: <span id="Unansweredqns">10</span><br><br>
+  <span id="feedback"></span>
+  <button id="exit" onclick="window.location.href='/';">Exit</button>
+</div> 
+</div> 
+</div>
+
+<div class="top_right">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="Images/SlideShow/Image1.jpg" width="600" height="500">
+  <div class="text">A pulsar from the space</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="Images/SlideShow/Image2.jpg" width="600" height="500">
+  <div class="text">Sun from the space</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="Images/SlideShow/Image3.jpg" width="600" height="500">
+  <div class="text">Indian Satellite SARAL</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="Images/SlideShow/Image4.jpg" width="600" height="500">
+  <div class="text">An astronaut</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="Images/SlideShow/Image5.jpg" width="600" height="500">
+  <div class="text">A Space Vehicle</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<br>
+<br>
+<br>
+</div>
+</div>
+
+
+   
+<script src="./quiz.js"></script>
+<script src="confetti.js"></script>
+
+
+</body>
+</html>
